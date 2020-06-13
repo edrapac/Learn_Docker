@@ -13,10 +13,17 @@ What is docker? A video that introduces you to docker, some basic command syntax
 Installing Docker Desktop on Windows 10
 * https://www.youtube.com/watch?v=_9AWYlt86B8
 
+Install gitbash as well! You will need want it! 
+https://gitforwindows.org/
+(Make sure to add it to your windows path during installation so that you can use docker commands from the bash terminal)
+
 ## Hello world, my name is Docker
 
 So now that you're familiarized with some basic docker commands, it's time to play around with some exercises. The majority of the exercises in this repo will be in separate folders however the introductory exercise can be done right here from the README
 
+## Table of contents 
+* Exercise 1 (see below!)
+* Exercise 2: [Disecting Dockerfiles](/Exercise_2/)
 ### Exercise 1: Ubuntu Playground
 <i>Note: all the exercises will have a task to complete, and then a click to reveal answer section</i>
 
