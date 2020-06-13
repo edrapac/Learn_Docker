@@ -92,3 +92,17 @@ On windows (ugh)
 
 What the heck? Well, you need to convert your windows file path to linux-y file path, and the way of doing that is starting the path with double slashes `//` then the `c` drive or whatever drive you have. Honestly, run `$(pwd)` in gitbash from this folder then just add an extra `/`. You <b>did</b> install gitbash like I told you to right? :wink: 
 </details>
+
+8. Cleanup!
+
+List all your containers you created in the process of this exercise and remove them 
+
+<details>
+  <summary>Click to reveal command</summary>
+  
+`docker ps -a`
+
+`docker rm containerid` 
+</details>
+
+This concludes exercise 1! Please use the folders for the rest of the exercises!
