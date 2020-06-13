@@ -57,3 +57,38 @@ So now that you're familiarized with some basic docker commands, it's time to pl
   Connect to it and echo the user:
   * ` docker exec -it container_name whoami`
 </details>
+
+5. Find the Container's IP
+
+<details>
+  <summary>Click to reveal command</summary>
+  
+`docker inspect container_name | grep -i ipaddress`
+Bonus if you used grep :smile:
+</details>
+
+6. Attach to the daemonized container
+
+<details>
+  <summary>Click to reveal command</summary>
+  
+`docker attach container_name`
+</details>
+
+7. Create a new container, mount this repo inside it, call that directory Lean_Docker. (Hint: do this from a `docker run` command, end the command with bash so that when the container is brought up you end up in a shell and can verify the dir is there )
+
+<details>
+  <summary>Click to reveal command</summary>
+
+Alright I'll admit this might be a tough one
+
+On Mac or Linux run the following
+`docker run -it -v $(pwd):/Learn_docker ubuntu bash`
+
+The idea here is that $(pwd) is the absolute path to the current working directory, held in a temporary variable
+
+On windows (ugh) 
+`docker run -it -v //c/path/to/this/folder:/Learn_docker ubuntu bash`
+
+What the heck? Well, you need to convert your windows file path to linux-y file path, and the way of doing that is starting the path with double slashes `//` then the `c` drive or whatever drive you have. Honestly, run `$(pwd)` in gitbash from this folder then just add an extra `/`. You <b>did</b> install gitbash like I told you to right? :wink: 
+</details>
