@@ -7,15 +7,17 @@ Docker 101
 
 There plenty of great educators out on the magical site of YouTube, some far better than I. Take a moment to watch the following videos before proceeding any further
 
-What is docker? A video that introduces you to docker, some basic command syntax, as well as how to install it on Linux or Mac. Using windows? No worries!
+What is docker? A video that introduces you to docker, some basic command syntax, as well as how to install it on Linux or Mac. 
 * https://www.youtube.com/watch?v=JprTjTViaEA
+
+Using windows? No worries!
 
 Installing Docker Desktop on Windows 10
 * https://www.youtube.com/watch?v=_9AWYlt86B8
 
-Install gitbash as well! You will need want it! 
+Install gitbash as well! You will need/want it! 
 https://gitforwindows.org/
-(Make sure to add it to your windows path during installation so that you can use docker commands from the bash terminal)
+(Make sure to add it to your windows path if it isnt already during installation so that you can use docker commands from the bash terminal)
 
 ## Hello world, my name is Docker
 
@@ -24,6 +26,7 @@ So now that you're familiarized with some basic docker commands, it's time to pl
 ## Table of contents 
 * Exercise 1 (see below!)
 * Exercise 2: [Disecting Dockerfiles](/Exercise_2/)
+* Exercise 3: [Examining Entrypoints](/Exercise_3/)
 ### Exercise 1: Ubuntu Playground
 <i>Note: all the exercises will have a task to complete, and then a click to reveal answer section</i>
 
