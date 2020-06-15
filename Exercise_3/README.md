@@ -18,7 +18,7 @@ Last lesson we stated that the entrypoint are commands that are ran as the very 
 
 Run the following command in this folder
 
-`docker build -t learn_docker` 
+`docker build -t learn_docker .` 
 
 Once built, run 
 
