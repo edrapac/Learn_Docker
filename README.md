@@ -28,7 +28,7 @@ So now that you're familiarized with some basic docker commands, it's time to pl
 * Exercise 2: [Disecting Dockerfiles](/Exercise_2/)
 * Exercise 3: [Examining Entrypoints](/Exercise_3/)
 ### Exercise 1: Ubuntu Playground
-<i>Note: all the exercises will have a task to complete, and then a click to reveal answer section</i>
+<i>Note: Not all of the exercises will have a task to complete with a click to reveal answer section</i>
 
 1. Pull the latest Ubuntu image
 
@@ -85,7 +85,7 @@ Bonus if you used grep :smile:
 `docker attach container_name`
 </details>
 
-7. Create a new container, mount this repo inside it, call that directory Lean_Docker. (Hint: do this from a `docker run` command, end the command with bash so that when the container is brought up you end up in a shell and can verify the dir is there )
+7. Create a new container, mount this repo inside it, call that directory Learn_Docker. (Hint: do this from a `docker run` command, end the command with bash so that when the container is brought up you end up in a shell and can verify the dir is there )
 
 <details>
   <summary>Click to reveal command</summary>
