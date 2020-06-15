@@ -27,12 +27,25 @@ Once built, run
 And observe how you now are dropped into the `htop` process that was started by the Entrypoint command <i>just</i> before your `bash` command was executed 
 ![htop](/images/htop_Learn_Docker_Exercise_3.png)
 
-Now for your assignment (should be a fun one)!
+### Multiple commands or commands w/params? No problem!
+
+You might notice about that the above command is a single line command with no parameters, so how would one pass params or different commands? Its easy
+
+```
+ENTRYPOINT ["command1","param1","param2"]
+```
+such as 
+```
+ENTRYPOINT ["htop","-t"]
+```
+
+Which is the cmd line equivalent of `htop -t`
+
+
+Now for your assignment (should be a fun one):
 
 Create a Dockerfile that...
 * Is a ubuntu/debian based
 * Runs an apt-get update 
 * Installs nmap
 * Runs nmap against an IP address or block of addresses as an Entrypoint command
-
-Then when you have that working, build an image from that file (`docker build -t my_image_name .`) and drop into a bash shell to make sure it worked.
