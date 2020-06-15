@@ -12,7 +12,7 @@ ENTRYPOINT ["htop"]
 Particularly, the Entrypoint line
 `ENTRYPOINT ["htop"]`
 
-Last lesson we stated that the entrypoint are commands that are ran as the very final command before user input. Expanding on that - When docker images, (and later containers) are built from docker files, the commands in the dockerfile are ran from top to bottom. The very last command in a dockerfile should be an entrypoint cmd. This command actually executes in the container right before the the user commands execute, and you can see evidence of that if you enter the container. 
+Last lesson we stated that the entrypoint are commands that are ran as the very final command before user input. Expanding on that - When docker images, (and later containers) are built from docker files, the commands in the dockerfile are ran from top to bottom. The very last command in a dockerfile can be an entrypoint cmd. This command actually executes in the container right before the the user commands execute, and you can see evidence of that if you enter the container. 
 
 ## Demonstration 
 
