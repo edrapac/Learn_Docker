@@ -51,4 +51,4 @@ Bring that container from above back up if you killed it already, and run a `doc
 
 ![inspect](/images/inspect.png)
 
-Observe that the container is reporting that port 80 has been mapped to the host's 8080. Also, checkout the fact that the container has it's own internal IP address. This is the IP address associated with the container's network interface (the one we talked about earlier). If you'd like, try pinging that address, you should get a reply.
+Observe that the container is reporting that port 80 has been mapped to the host's 8080. Also, checkout the fact that the container has it's own internal IP address. This is the IP address associated with the container's network interface (the one we talked about earlier). If you'd like, try pinging that address from your host machine, you should get a reply.
