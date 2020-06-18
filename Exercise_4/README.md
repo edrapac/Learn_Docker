@@ -34,3 +34,21 @@ and then
 Then open up a browser such as Google Chrome and go to http://localhost:8080 
 
 Do you see the web page?
+
+## How does that work?
+
+At this point, I'm sure you have some questions about how that works. So lets first take a look at how Docker handles networking
+
+By default, when you install docker a new network interface will be created. Unless otherwise specifed, <b>all</b> docker containers that you create will have this interface attached to them by default. 
+
+Lets take a look
+
+Bring that container from above back up if you killed it already, and run a `docker inspect` on it. I know we havent formally talked about `inspect` but its very straightforward, it provides a lot of both high and low level info on a runnning container. Below is first the output from `docker ps` to list the running container, and then a `docker inspect` showing the docker container's IP address
+
+![ps](/images/ps.png)
+
+`docker inspect 4da35beff112`
+
+![inspect](/images/inspect.png)
+
+Observe that the container is reporting that port 80 has been mapped to the host's 8080. Also, checkout the fact that the container has it's own internal IP address. This is the IP address associated with the container's network interface (the one we talked about earlier). If you'd like, try pinging that address, you should get a reply.
