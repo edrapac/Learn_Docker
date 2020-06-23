@@ -110,4 +110,4 @@ docker run bash -it exercise5 bash
 
 Then make sure everything came up as it was supposed to!
 
-[!bashoutput](../images/bash_output.png)
+![bashoutput](../images/bash_output.png)
