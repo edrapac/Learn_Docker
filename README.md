@@ -27,6 +27,8 @@ So now that you're familiarized with some basic docker commands, it's time to pl
 * Exercise 1 (see below!)
 * Exercise 2: [Disecting Dockerfiles](/Exercise_2/)
 * Exercise 3: [Examining Entrypoints](/Exercise_3/)
+* Exercise 4: [Networking](/Exercise_4/)
+* Exercise 5: [Advanced Entrypoints, File Configs](/Exercise_5/)
 ### Exercise 1: Ubuntu Playground
 <i>Note: Not all of the exercises will have a task to complete with a click to reveal answer section</i>
 
