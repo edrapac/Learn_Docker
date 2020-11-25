@@ -101,7 +101,7 @@ The idea here is that $(pwd) is the absolute path to the current working directo
 On windows (ugh) 
 `docker run -it -v //c/path/to/this/folder:/Learn_docker ubuntu bash`
 
-What the heck? Well, you need to convert your windows file path to linux-y file path, and the way of doing that is starting the path with double slashes `//` then the `c` drive or whatever drive you have. Honestly, run `$(pwd)` in gitbash from this folder then just add an extra `/`. You <b>did</b> install gitbash like I told you to right? :wink: 
+What the heck? Well, you need to convert your windows file path to linux-y file path, and the way of doing that is starting the path with double slashes `//` then the `c` drive or whatever drive you have. Honestly, run `$(pwd)` in gitbash from this folder then just add an extra `/`.
 </details>
 
 8. Cleanup!
