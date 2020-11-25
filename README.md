@@ -87,7 +87,7 @@ Bonus if you used grep :smile:
 `docker attach container_name`
 </details>
 
-7. Create a new container, mount this repo inside it, call that directory Learn_Docker. (Hint: do this from a `docker run` command, end the command with bash so that when the container is brought up you end up in a shell and can verify the dir is there )
+7. Create a new container, mount this repo inside it, call that directory Learn_Docker. (Hint: do this from a `docker run` command, end the command with bash so that when the container is brought up you end up in a shell and can verify the dir is there. Stuck? If you are on Linux or Mac mount `$(pwd)` inside the container. If you're on windows checkout [this guide](https://medium.com/@kale.miller96/how-to-mount-your-current-working-directory-to-your-docker-container-in-windows-74e47fa104d7))
 
 <details>
   <summary>Click to reveal command</summary>
