@@ -12,12 +12,11 @@ What is docker? A video that introduces you to docker, some basic command syntax
 
 Using windows? No worries!
 
-Installing Docker Desktop on Windows 10
-* https://www.youtube.com/watch?v=_9AWYlt86B8
+First make sure to enable and install WSL2...
+* https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
-Install gitbash as well! You will need/want it! 
-https://gitforwindows.org/
-(Make sure to add it to your windows path if it isnt already during installation so that you can use docker commands from the bash terminal)
+Then follow this guide to installing Docker desktop with WSL2 backend!
+* https://docs.docker.com/docker-for-windows/wsl/
 
 ## Hello world, my name is Docker
 
