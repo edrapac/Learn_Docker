@@ -105,7 +105,7 @@ dos2unix entrypoint.sh
 
 docker build -t exercise5 .
 
-docker run bash -it exercise5 bash
+docker run -it exercise5 bash
 ```
 
 Then make sure everything came up as it was supposed to!
