@@ -18,6 +18,29 @@ First make sure to enable and install WSL2...
 Then follow this guide to installing Docker desktop with WSL2 backend!
 * https://docs.docker.com/docker-for-windows/wsl/
 
+## Installing and managing docker without the use of Docker Desktop
+
+In some cases it may not be possible to use Docker Desktop to manage docker containers. If you are on Mac or Windows, you will need to use an alternative software to create the Docker VM (the VM that brings up all the docker containers under the hood.) Here are some alternatives to Docker Desktop and which platforms are supported.
+
+* [Colima](https://github.com/abiosoft/colima)
+  * Platforms Supported: Mac
+  * Notes: Very good solution for Macs, please note there are some special caveats for mounting internal folders that will be discussed below.
+
+* [Podman](https://podman.io/)
+  * Platforms Supported: Mac, Windows, Linux 
+  * Notes: Windows requires some special installation steps [here](https://podman.io/getting-started/installation)
+
+* Linux VM 
+  * Platforms Supported: Mac, Windows
+  * Notes: If the 2 above solutions aren't possible, you can always create a linux vm using vmware or other such vm solution, and then install docker on the virtual machine following the specific install instructions for that distro, here are the install instructions for [Ubuntu](https://docs.docker.com/engine/install/ubuntu/), a very user friendly and widely supported linux distro.
+
+**Note about mounting directories from host with Colima:**
+
+After Colima has been installed successfully, you need to run `colima start` in order to bring up the Colima VM, which in turn is the VM that handles creating and destroying docker containers. Out of the box colima will mount your entire home directory as a read only volume within the colima VM which makes it easily accessible to Docker. If at any time you wish to mount other directories from your local machine into a container as a volume, you will need to start the colima VM with some additional flags. In the example below, the colima VM is started and will mount a directory on the host found at `~/project` to `/project` within the Colima vm, which in turn makes it accessible to any docker container at the same path `/projects` as well. This becomes important when we get to Exercise 5 found in this course.
+
+`colima start --mount $HOME/project:/project:w`
+
+
 ## Hello world, my name is Docker
 
 So now that you're familiarized with some basic docker commands, it's time to play around with some exercises. The majority of the exercises in this repo will be in separate folders however the introductory exercise can be done right here from the README
